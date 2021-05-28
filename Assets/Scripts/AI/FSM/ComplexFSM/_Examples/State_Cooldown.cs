@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ComplexFSM {
     namespace Examples {
-        //Cooldown state, will wait for a second
+        //Cooldown state: will wait for a second
         public class State_Cooldown : State {
             float timer;
             const float timeToWait = 1.0f;
