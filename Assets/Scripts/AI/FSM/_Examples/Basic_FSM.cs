@@ -28,7 +28,7 @@ namespace ImplementationExamples {
                         //TODO: Conditions for transitions
                         break;
                     case FSM_States.S5_Dead:
-                        //Dead, stop all process and disable AI
+                        //Dead: stop all process and disable AI
                         break;
                     default:
                         //Edge case
