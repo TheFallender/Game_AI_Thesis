@@ -63,7 +63,7 @@ public class Flee : MonoBehaviour {
         //If it's greater than 0 there are
         //flees left, if it's less than 0
         //it's set to flee forever
-        return fleeCounter != 0;
+        return fleeCounter != 0 || !fleeFinished;
     }
 
     //Reset the counter of flees

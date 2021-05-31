@@ -4,8 +4,9 @@ using Pathfinding;
 public class GoTo : MonoBehaviour
 {
     //GoTo Variables
-    private Transform target;               //Target of the Agent
-    private float rangeOfAction = -1f;      //Range of the action to perform
+    private Transform target;                       //Target of the Agent
+    private float rangeOfAction = -1f;              //Range of the action to perform
+    [SerializeField] private float rotationSpeed;   //Rotation speed
 
     //Pathfinding components
     public GameObject pathfindingObject;    //Pathfinding Object
@@ -32,6 +33,26 @@ public class GoTo : MonoBehaviour
         } else {
             StopPathfinding();
         }
+    }
+
+    //Point towards the current target
+    public void PointToObject () {
+        PointToObject(target);
+    }
+
+    //Point towards an specific target
+    public void PointToObject (Transform targetToPoint) {
+        //Create a normalized vector pointing in the direction of the target
+        Vector3 targetDir = (targetToPoint.position - pathfindingObject.transform.position).normalized;
+        
+        //Only allow Y angle movement
+        targetDir.Scale(new Vector3(1, 0, 1));
+
+        //Create the quaternion
+        Quaternion whereToLook = Quaternion.LookRotation(targetDir);
+
+        //Perform the rotation
+        pathfindingObject.transform.rotation = Quaternion.Slerp(pathfindingObject.transform.rotation, whereToLook, Time.deltaTime * rotationSpeed);
     }
 
     //Get target
