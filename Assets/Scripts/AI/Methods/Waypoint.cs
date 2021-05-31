@@ -14,8 +14,7 @@ public class Waypoint : MonoBehaviour {
         if (Physics.Raycast(point.transform.position + new Vector3(0, 0.1f), Vector3.down, out RaycastHit rayHit, range)) {
             point.position = rayHit.point;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 }

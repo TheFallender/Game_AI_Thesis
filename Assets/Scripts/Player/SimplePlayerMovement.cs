@@ -6,19 +6,11 @@ public class SimplePlayerMovement : MonoBehaviour {
     //Direction to go
     private Vector3 dirToMove;
 
-    //Rigidbody
-    private Rigidbody rb;
-
     //Speed to move
     [SerializeField] private float speed;
 
     //Up, Down, Left, Right
     [SerializeField] private List<KeyCode> keysToMove = new List<KeyCode>(4);
-
-    //Awake
-    private void Awake () {
-        rb = GetComponent<Rigidbody>();
-    }
 
     //Update
     private void Update () {
@@ -35,10 +27,8 @@ public class SimplePlayerMovement : MonoBehaviour {
     //FixedUpdate
     private void FixedUpdate () {
         if (dirToMove != Vector3.zero) {
-            rb.velocity = new Vector3(0, rb.velocity.y, 0) + dirToMove * (speed * Time.fixedDeltaTime);
+            transform.Translate(dirToMove * (speed * Time.fixedDeltaTime));
             dirToMove = Vector3.zero;
-        } else {
-            rb.velocity.Scale(new Vector3(0, 1, 0));
         }
     }
 }

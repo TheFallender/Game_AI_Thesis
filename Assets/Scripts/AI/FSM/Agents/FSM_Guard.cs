@@ -86,10 +86,13 @@ public class FSM_Guard : MonoBehaviour {
                 break;
             //Attack the player
             case State.Attack:
+                //Keep pointing at the target if it is close enough
+                goTo.PointToObject();
+
                 //The agent will continue to follow the target and
                 //hit it until it's either dead or the agent has
                 //taken enough damage to retreat or be dead
-                if (!(goTo.TargetExists() || attack.TargetAlive())) {
+                if (!goTo.TargetExists() || !attack.TargetAlive()) {
                     attack.RemoveTarget();
                     SetState(State.Patrol);
                 }
@@ -131,10 +134,9 @@ public class FSM_Guard : MonoBehaviour {
                     //If it has a heal, go to the healing state
                     if (availableHeal != null)
                         SetState(State.Heal);
-
-                    //If the heal has been taken or it has been consumed
-                    //recheck for more heals
-                    if (goTo.TargetExists() || healWanted.hasBeenTaken) {
+                    else if (!goTo.TargetExists() || healWanted.hasBeenTaken) {
+                        //If the heal has been taken or it has been consumed
+                        //recheck for more heals
                         lastStateInitialized = State.Recheck;
                     }
                 }
@@ -153,7 +155,8 @@ public class FSM_Guard : MonoBehaviour {
                 break;
             //Stop all processing and destroy agent gameobject
             case State.Dead:
-                Destroy(gameObject);
+                goTo.StopPathfinding();
+                Destroy(transform.parent.parent.gameObject);
                 break;
             //Edge case
             default:
@@ -189,11 +192,10 @@ public class FSM_Guard : MonoBehaviour {
     //Method subscribed to when the agent gets damaged
     private void OnDamageTaken (int health, int maxHealth, float threshold) {
         //Check if there is a need for a state change
-        if (health < 0) {
+        if (health <= 0) {
             SetState(State.Dead);
             attack.RemoveTarget();
-        }
-        else if (health < maxHealth * threshold) {
+        } else if (health < maxHealth * threshold) {
             SetState(State.Flee);
             attack.RemoveTarget();
             flee.ResetCounter();
