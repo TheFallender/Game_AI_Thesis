@@ -2,21 +2,15 @@ using System.Collections.Generic;
 using System.Linq;
 
 //Ranged Actions Template
-public class RangedAction : SGoap.BasicAction {
+public abstract class RangedAction : SGoap.MainAction {
     //Range needed for the action
-    public float RangeNeeded;
+    public float rangeNeeded;
+    public UnityEngine.Transform target;
+    public SGoap.StringReference stateToUpdate;
 
-    //Get the Range of the next ranged action in the Queue
-    public static float GetRangeOfNextAction (Queue<SGoap.Action> currentPlan) {
-        //Get the Ranged action
-        SGoap.Action firstRangedAction = currentPlan.ToList().Find(act => act is RangedAction);
-
-        //Check if a ranged action was found
-        if (firstRangedAction != null) {
-            //Range value
-            return ((RangedAction) firstRangedAction).RangeNeeded;
-        } else
-            //Error value
-            return -1f;
+    //Get next ranged action in the Queue
+    public static RangedAction GetNextRangedAction (Queue<SGoap.Action> currentPlan) {
+        //Find the first one
+        return (RangedAction) currentPlan.ToList().Find(act => act is RangedAction);
     }
 }

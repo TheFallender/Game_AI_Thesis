@@ -11,4 +11,12 @@ public class MeleeAttack : RangedAction {
         Debug.Log("Attack Player");
         return EActionStatus.Success;
     }
+
+    public override bool PostPerform () {
+        return true;
+    }
+
+    public override bool PrePerform () {
+        return true;
+    }
 }

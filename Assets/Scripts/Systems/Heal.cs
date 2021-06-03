@@ -41,6 +41,13 @@ public class Heal : MonoBehaviour {
                 healthSystem.RestoreHealthStepped();
                 break;
         }
+        DeleteHeal();
+    }
+
+    //Delete the heal
+    public void DeleteHeal () {
+        //Remove from the pool
+        listOfHeals.Remove(this);
 
         //Destroy the object holding the heal
         Destroy(gameObject);
