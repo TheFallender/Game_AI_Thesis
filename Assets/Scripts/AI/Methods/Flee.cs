@@ -16,6 +16,10 @@ public class Flee : MonoBehaviour {
     public bool fleeFinished = true;    //Has the previous flee finished
     private IEnumerator fleeWait;       //Enumerator to allow cancelling the wait
 
+    private void Awake () {
+        fleeCounter = timesToFlee;
+    }
+
     //Get the next flee point
     public Transform GetNewFlee () {
         //Get a random point in a plane
@@ -68,7 +72,8 @@ public class Flee : MonoBehaviour {
 
     //Reset the counter of flees
     public void ResetCounter () {
-        fleeCounter = timesToFlee;
+        if (fleeCounter >= 0)
+            fleeCounter = timesToFlee;
     }
 
     //Enable full panic

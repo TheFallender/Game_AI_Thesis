@@ -11,7 +11,7 @@ public class Detection : MonoBehaviour {
     public event TargetFound TargetDetected;
 
     //When a gameObject enters to the trigger zone
-    private void OnTriggerStay (Collider other) {
+    private void OnTriggerEnter (Collider other) {
         if (TagChecks.CompareTags(other.gameObject, tagsToCompare))
             OnTargetFound(other.transform);
     }

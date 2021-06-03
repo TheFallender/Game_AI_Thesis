@@ -79,6 +79,11 @@ public class HealthSystem : MonoBehaviour {
         return currentHealth > 0;
     }
 
+    //Return if the health is low
+    public bool IsHealthLow () {
+        return currentHealth < maxHealth * healthThreshold;
+    }
+
     #endregion ExtraMethods
 
     #region Events

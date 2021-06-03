@@ -15,7 +15,7 @@ public class GoTo : MonoBehaviour
     private AIDestinationSetter destStr;    //Setter to target
 
     //Set variable components on start
-    public void Start () {
+    private void Awake () {
         //Get the components of the pathfinding
         seeker = pathfindingObject.GetComponent<Seeker>();
         aiPath = pathfindingObject.GetComponent<AIPath>();
@@ -89,6 +89,11 @@ public class GoTo : MonoBehaviour
     //Check if the object is near enough
     public static bool ObjectNearEnough (Transform origin, Transform destination, float range) {
         return DistanceToPoint(origin, destination) <= range;
+    }
+
+    //Return the current distance to a target
+    public float DistanceToTarget () {
+        return DistanceToPoint(pathfindingObject.transform, target);
     }
 
     //Check if the destination has been reached

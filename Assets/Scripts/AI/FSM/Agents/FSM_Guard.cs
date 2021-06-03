@@ -155,7 +155,8 @@ public class FSM_Guard : MonoBehaviour {
                 break;
             //Stop all processing and destroy agent gameobject
             case State.Dead:
-                goTo.StopPathfinding();
+                if (availableHeal)
+                    availableHeal.DeleteHeal();
                 Destroy(transform.parent.parent.gameObject);
                 break;
             //Edge case
@@ -204,6 +205,10 @@ public class FSM_Guard : MonoBehaviour {
 
     //Method subscribed to when the agent collects a heal
     private void OnHealCollected (Heal healToAdd) {
+        //Delete previous heal if it has one
+        if (availableHeal == null)
+            availableHeal.DeleteHeal();
+
         //Overrides previous heal
         availableHeal = healToAdd;
     }
