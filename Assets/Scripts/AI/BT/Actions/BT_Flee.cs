@@ -24,15 +24,12 @@ public class BT_Flee : BT_StateAction {
             //If it has finished fleeing get a new 
             if (flee.fleeFinished)
                 agentData.Value.goTo.GoToPoint(flee.GetNewFlee(), fleeRange);
-
-            return TaskStatus.Running;
         } else {
             shouldFlee.Value = false;
 
             //Reset the heals
             flee.ResetCounter();
-
-            return TaskStatus.Success;
         }
+        return TaskStatus.Success;
     }
 }

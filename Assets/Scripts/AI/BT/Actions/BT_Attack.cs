@@ -32,11 +32,10 @@ public class BT_Attack : BT_StateAction {
         if (!agentData.Value.goTo.TargetExists() || !attack.TargetAlive()) {
             attack.RemoveTarget();
             hasTarget.Value = false;
-            return TaskStatus.Success;
         } else {
             //Keep pointing at the target if it is close enough
             agentData.Value.goTo.PointToObject();
-            return TaskStatus.Inactive;
         }
+        return TaskStatus.Success;
     }
 }
