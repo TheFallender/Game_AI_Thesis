@@ -206,7 +206,7 @@ public class FSM_Guard : MonoBehaviour {
     //Method subscribed to when the agent collects a heal
     private void OnHealCollected (Heal healToAdd) {
         //Delete previous heal if it has one
-        if (availableHeal == null)
+        if (availableHeal != null)
             availableHeal.DeleteHeal();
 
         //Overrides previous heal

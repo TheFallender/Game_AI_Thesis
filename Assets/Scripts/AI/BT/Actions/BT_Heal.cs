@@ -15,20 +15,19 @@ public class BT_Heal : BT_StateAction {
 
     //OnUpdate Call
     public override TaskStatus OnUpdate () {
+        //Use the heal
+        agentData.Value.availableHeal.UseHeal(agentData.Value.health);
+        agentData.Value.availableHeal = null;
+
+        //Reset health
+        if (!agentData.Value.health.IsHealthLow())
+            lowHealth.Value = 0;
+
         //Remove heal
         hasHeal.Value = false;
 
         //Remove target
         hasTarget.Value = false;
-
-        //Use the heal
-        agentData.Value.availableHeal.UseHeal(agentData.Value.health);
-        agentData.Value.availableHeal = null;
-
-
-        //Reset health
-        if (!agentData.Value.health.IsHealthLow())
-            lowHealth.Value = 0;
 
         return TaskStatus.Success;
     }

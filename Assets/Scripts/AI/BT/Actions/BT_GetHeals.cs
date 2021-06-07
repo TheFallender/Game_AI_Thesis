@@ -20,7 +20,7 @@ public class BT_GetHeals : BT_StateAction {
             SetState();
 
             return CheckForHeals() ?
-                TaskStatus.Running :
+                TaskStatus.Success :
                 TaskStatus.Failure;
         }
 
@@ -34,10 +34,10 @@ public class BT_GetHeals : BT_StateAction {
             //If the heal has been taken or it has been consumed
             //recheck for more heals
             return CheckForHeals() ?
-                TaskStatus.Running :
+                TaskStatus.Success :
                 TaskStatus.Failure;
         } else
-            return TaskStatus.Running;
+            return TaskStatus.Success;
     }
 
     private bool CheckForHeals () {

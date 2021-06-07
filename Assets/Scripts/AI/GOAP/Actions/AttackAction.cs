@@ -14,7 +14,6 @@ public class AttackAction : MainAction {
 
     //PrePerform
     public override bool PrePerform () {
-
         //Assign the target
         attack.AssignTarget(AgentData.Target);
 
@@ -30,10 +29,7 @@ public class AttackAction : MainAction {
         //taken enough damage to retreat or be dead
         if (!AgentData.goTo.TargetExists() || !attack.TargetAlive()) {
             attack.RemoveTarget();
-            States.SetState(
-                hasTarget.ToString(),
-                0f
-            );
+            States.RemoveState(hasTarget.ToString());
             return EActionStatus.Success;
         } else {
             //Keep pointing at the target if it is close enough

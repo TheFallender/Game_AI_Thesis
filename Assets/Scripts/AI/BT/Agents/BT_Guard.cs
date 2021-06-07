@@ -35,16 +35,12 @@ public class BT_Guard : BT_Agent {
         if (health <= 0) {
             //Set that the agent is dead
             lowHealth.Value = 2;
-
-            RecheckBehavior();
         } else if (health < maxHealth * threshold) {
             //Set that the agent has to flee
             lowHealth.Value = 1;
             shouldFlee.Value = true;
 
             flee.ResetCounter();
-
-            RecheckBehavior();
         }
     }
 
@@ -59,8 +55,6 @@ public class BT_Guard : BT_Agent {
 
         //Set that the agent has a heal
         hasHeal.Value = true;
-
-        RecheckBehavior();
     }
 
     //Method subscribed to when the agent detects a valid target
@@ -71,13 +65,6 @@ public class BT_Guard : BT_Agent {
 
             //Set the target
             agentData.Value.target = targetDetected;
-
-            RecheckBehavior();
         }
-    }
-
-    private void RecheckBehavior () {
-        tree.DisableBehavior();
-        tree.EnableBehavior();
     }
 }
