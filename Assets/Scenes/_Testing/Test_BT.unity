@@ -123,36 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &74599178
+--- !u!1 &242559601 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4355596829319306659, guid: 906c762d00c533c4b8f9b9ba1f201596,
+    type: 3}
+  m_PrefabInstance: {fileID: 1978482316}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 74599179}
-  m_Layer: 10
-  m_Name: BehaviorTrees
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &74599179
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74599178}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978482317}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &319984029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7472843599059841644, guid: 2df24812643c0e44e8fe24939439095f,
@@ -226,6 +202,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestingMap
       objectReference: {fileID: 0}
+    - target: {fileID: 5879492902689133142, guid: 29d633bea87ae9a4597f50d4e9b73fe7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29d633bea87ae9a4597f50d4e9b73fe7, type: 3}
 --- !u!1 &470792034 stripped
@@ -269,6 +250,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 705f91192f7329d4ea5eb41347b7b45f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1087614013 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4355596830222985843, guid: 906c762d00c533c4b8f9b9ba1f201596,
+    type: 3}
+  m_PrefabInstance: {fileID: 1978482316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55e3e448e0825c49a51130721be790e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1169268350 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4355596828290710833, guid: 906c762d00c533c4b8f9b9ba1f201596,
+    type: 3}
+  m_PrefabInstance: {fileID: 1978482316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8bf35758ec4e914ba0b89f6412b925d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1271939869
@@ -495,6 +500,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5115b7eae70e4bc45a5c6fe1e6ba60c5, type: 3}
+--- !u!114 &1549276848 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4355596828491232341, guid: 906c762d00c533c4b8f9b9ba1f201596,
+    type: 3}
+  m_PrefabInstance: {fileID: 1978482316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f392da23ff5a03b46b54503656bf6fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1707314657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4355596829966976192, guid: 906c762d00c533c4b8f9b9ba1f201596,
+    type: 3}
+  m_PrefabInstance: {fileID: 1978482316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8d00d4f7ca8054998d64bb4cdae48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1732312002
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,6 +556,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1820713535 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4355596829538287624, guid: 906c762d00c533c4b8f9b9ba1f201596,
+    type: 3}
+  m_PrefabInstance: {fileID: 1978482316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6049b727a6477cc448af91fa2287080c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1978482316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -599,6 +640,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardAgent
       objectReference: {fileID: 0}
+    - target: {fileID: 4355596830202746498, guid: 906c762d00c533c4b8f9b9ba1f201596,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355596830202746498, guid: 906c762d00c533c4b8f9b9ba1f201596,
+        type: 3}
+      propertyPath: timesToPerform
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4355596830202746509, guid: 906c762d00c533c4b8f9b9ba1f201596,
         type: 3}
       propertyPath: m_Name
@@ -611,12 +662,6 @@ PrefabInstance:
       objectReference: {fileID: 470792036}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 906c762d00c533c4b8f9b9ba1f201596, type: 3}
---- !u!4 &1978482317 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4355596830202746497, guid: 906c762d00c533c4b8f9b9ba1f201596,
-    type: 3}
-  m_PrefabInstance: {fileID: 1978482316}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1978482318 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4355596830202746509, guid: 906c762d00c533c4b8f9b9ba1f201596,
@@ -651,21 +696,64 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(395,91)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(0,89.5833359)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":5},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-5.00000954,105.000015)"},"ID":2,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"ConditionalBranch","NodeData":{"Offset":"(3.33333778,100.416664)"},"ID":3,"Name":"Conditional
-        Branch","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-140,110)"},"ID":4,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(-1.42849731,107.958984)"},"ID":5,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"True"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-0.4166565,107.916435)"},"ID":6,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"SequenceLast","NodeData":{"Offset":"(-1.55896,125.013611)"},"ID":7,"Name":"Sequence
-        Last","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.BoolComparison","NodeData":{"Offset":"(-173.750015,108.333328)"},"ID":8,"Name":"Bool
-        Comparison","Instant":true,"SharedBoolbool1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolbool2":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(0,107.916656)"},"ID":9,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Waiting"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(151.25,109.583344)"},"ID":10,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(0,110)"},"ID":11,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"False"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(160,100.833344)"},"ID":12,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Finished"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(266.1494,104.805206)"},"ID":13,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]}]}}'
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(395,91)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-5,98)"},"ID":1,"Name":"Initial
+        Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BT_Guard","NodeData":{"Offset":"(-142.7778,99.8888855)"},"ID":2,"Name":"Guard","Instant":true,"Detectiondetection":0,"Fleeflee":1,"Behaviortree":2,"SharedBoolhasTarget":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"hasTarget","IsShared":true,"BooleanmValue":false},"SharedBoolshouldFlee":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"shouldFlee","IsShared":true,"BooleanmValue":false},"SharedBoolhasHeal":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"hasHeal","IsShared":true,"BooleanmValue":false},"SharedIntlowHealth":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"lowHealth","IsShared":true,"Int32mValue":0},"SharedAgentDataagentData":{"Type":"BehaviorDesigner.Runtime.SharedAgentData","Name":"agentData","IsShared":true,"BT_AgentDatamValue":{"HealthSystemhealth":3,"GoTogoTo":4,"Int32agentState":-1}}},{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(0,100)"},"ID":3,"Name":"Main
+        Loop","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"ConditionalBranch","NodeData":{"Offset":"(-0.869545,99.13043)"},"ID":4,"Name":"Conditional
+        Branch","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"ConditionalBranch","NodeData":{"Offset":"(-206.521667,108.695679)"},"ID":5,"Name":"Health
+        Ok","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BT_Attack","NodeData":{"Offset":"(-120,122.173889)"},"ID":6,"Name":"Attack","Instant":true,"Attackattack":5,"SharedBoolhasTarget":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"hasTarget","IsShared":true,"BooleanmValue":false},"SinglerangeOfAttacks":3,"SharedAgentDataagentData":{"Type":"BehaviorDesigner.Runtime.SharedAgentData","Name":"agentData","IsShared":true,"BT_AgentDatamValue":{"HealthSystemhealth":6,"GoTogoTo":7,"Int32agentState":-1}},"Int32stateID":1},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.BoolComparison","NodeData":{"Offset":"(0,120)"},"ID":7,"Name":"Target?","Instant":true,"SharedBoolbool1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"hasTarget","IsShared":true,"BooleanmValue":false},"SharedBoolbool2":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BT_Patrol","NodeData":{"Offset":"(120,122.173889)"},"ID":8,"Name":"Patrol","Instant":true,"Patrolpatrol":8,"SinglerangeWaypoints":3,"SharedBoolhasTarget":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"hasTarget","IsShared":true,"BooleanmValue":false},"SharedAgentDataagentData":{"Type":"BehaviorDesigner.Runtime.SharedAgentData","Name":"agentData","IsShared":true,"BT_AgentDatamValue":{"HealthSystemhealth":9,"GoTogoTo":10,"Int32agentState":-1}},"Int32stateID":0}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.IntComparison","NodeData":{"Offset":"(0,110)"},"ID":9,"Name":"Low
+        Health?","Instant":true,"Operationoperation":"EqualTo","SharedIntinteger1":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"lowHealth","IsShared":true,"Int32mValue":0},"SharedIntinteger2":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0}},{"Type":"ConditionalBranch","NodeData":{"Offset":"(209.5653,109.130432)"},"ID":10,"Name":"Bad
+        Health","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"ConditionalBranch","NodeData":{"Offset":"(-115.000183,122.272827)"},"ID":11,"Name":"Alive","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BT_Flee","NodeData":{"Offset":"(-131.3637,120)"},"ID":12,"Name":"Flee","Instant":true,"Fleeflee":11,"SharedBoolshouldFlee":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"shouldFlee","IsShared":true,"BooleanmValue":false},"SinglefleeRange":3,"SharedAgentDataagentData":{"Type":"BehaviorDesigner.Runtime.SharedAgentData","Name":"agentData","IsShared":true,"BT_AgentDatamValue":{"HealthSystemhealth":12,"GoTogoTo":13,"Int32agentState":-1}},"Int32stateID":2},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.BoolComparison","NodeData":{"Offset":"(0,120)"},"ID":13,"Name":"Should
+        it flee?","Instant":true,"SharedBoolbool1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"shouldFlee","IsShared":true,"BooleanmValue":false},"SharedBoolbool2":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"ConditionalBranch","NodeData":{"Offset":"(115.000183,122.272766)"},"ID":14,"Name":"Flee
+        Done","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BT_Heal","NodeData":{"Offset":"(-119.554016,119.396912)"},"ID":15,"Name":"Heal","Instant":true,"SharedBoolhasHeal":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"hasHeal","IsShared":true,"BooleanmValue":false},"SharedBoolhasTarget":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"hasTarget","IsShared":true,"BooleanmValue":false},"SharedIntlowHealth":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"lowHealth","IsShared":true,"Int32mValue":0},"SharedAgentDataagentData":{"Type":"BehaviorDesigner.Runtime.SharedAgentData","Name":"agentData","IsShared":true,"BT_AgentDatamValue":{"HealthSystemhealth":14,"GoTogoTo":15,"Int32agentState":-1}},"Int32stateID":4},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.BoolComparison","NodeData":{"Offset":"(0,120)"},"ID":16,"Name":"Has
+        Heals?","Instant":true,"SharedBoolbool1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"hasHeal","IsShared":true,"BooleanmValue":false},"SharedBoolbool2":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BT_GetHeals","NodeData":{"Offset":"(120.445984,119.396912)"},"ID":17,"Name":"GetHeals","Instant":true,"Fleeflee":16,"SharedBoolshouldFlee":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"shouldFlee","IsShared":true,"BooleanmValue":false},"SharedAgentDataagentData":{"Type":"BehaviorDesigner.Runtime.SharedAgentData","Name":"agentData","IsShared":true,"BT_AgentDatamValue":{"HealthSystemhealth":17,"GoTogoTo":18,"Int32agentState":-1}},"Int32stateID":3}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.IntComparison","NodeData":{"Offset":"(-4.34777832,117.826111)"},"ID":18,"Name":"Is
+        Alive?","Instant":true,"Operationoperation":"LessThan","SharedIntinteger1":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"lowHealth","IsShared":true,"Int32mValue":0},"SharedIntinteger2":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":2}},{"Type":"BT_Dead","NodeData":{"Offset":"(121.956543,124.913025)"},"ID":19,"Name":"Dead","Instant":true,"GameObjectmainObject":19,"SharedAgentDataagentData":{"Type":"BehaviorDesigner.Runtime.SharedAgentData","Name":"agentData","IsShared":true,"BT_AgentDatamValue":{"HealthSystemhealth":20,"GoTogoTo":21,"Int32agentState":-1}},"Int32stateID":5}]}]}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"hasTarget","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"shouldFlee","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"hasHeal","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"lowHealth","IsShared":true,"Int32mValue":0},{"Type":"BehaviorDesigner.Runtime.SharedAgentData","Name":"agentData","IsShared":true,"BT_AgentDatamValue":{"HealthSystemhealth":22,"GoTogoTo":23,"Int32agentState":-1}}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
         startIndex: 
         dataPosition: 
-        unityObjects: []
+        unityObjects:
+        - {fileID: 1169268350}
+        - {fileID: 1820713535}
+        - {fileID: 1978482319}
+        - {fileID: 1978482321}
+        - {fileID: 1549276848}
+        - {fileID: 1707314657}
+        - {fileID: 1978482321}
+        - {fileID: 1549276848}
+        - {fileID: 1087614013}
+        - {fileID: 1978482321}
+        - {fileID: 1549276848}
+        - {fileID: 1820713535}
+        - {fileID: 1978482321}
+        - {fileID: 1549276848}
+        - {fileID: 1978482321}
+        - {fileID: 1549276848}
+        - {fileID: 1820713535}
+        - {fileID: 1978482321}
+        - {fileID: 1549276848}
+        - {fileID: 242559601}
+        - {fileID: 1978482321}
+        - {fileID: 1549276848}
+        - {fileID: 1978482321}
+        - {fileID: 1549276848}
         byteData: 
         byteDataArray: 
       Version: 1.6.8
   gizmoViewMode: 2
   showBehaviorDesignerGizmo: 1
+--- !u!114 &1978482321 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4355596830202746499, guid: 906c762d00c533c4b8f9b9ba1f201596,
+    type: 3}
+  m_PrefabInstance: {fileID: 1978482316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978482318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a01928fa6f5b542b14d006b8e15bdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2644472834853878213
 PrefabInstance:
   m_ObjectHideFlags: 0
