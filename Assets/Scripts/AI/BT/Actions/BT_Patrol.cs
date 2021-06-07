@@ -26,31 +26,24 @@ public class BT_Patrol : BT_StateAction {
 
             //Set last waypoint as the current one
             SetWaypointDestination(patrol.GetCurrentWaypoint());
-        }
-
-
-        //If it reached the point, set the next one
-        if (agentData.Value.goTo.ReachedDestination()) {
-            //If it has already waited or there is no wait
-            if (!patrol.NeedToWait())
-                //Get the next waypoint info
-                SetWaypointDestination(patrol.FindNextWaypoint());
-            //If it's not currently waiting
-            else {
-                patrol.WaitingOnWaypoint();
-                agentData.Value.goTo.StopPathfinding();
+        } else {
+            //If it reached the point, set the next one
+            if (agentData.Value.goTo.ReachedDestination()) {
+                //If it has already waited or there is no wait
+                if (!patrol.NeedToWait())
+                    //Get the next waypoint info
+                    SetWaypointDestination(patrol.FindNextWaypoint());
+                //If it's not currently waiting
+                else {
+                    patrol.WaitingOnWaypoint();
+                    agentData.Value.goTo.StopPathfinding();
+                }
             }
         }
 
 
-        return TaskStatus.Running;
 
-
-        ////Return value based on the target status from the states
-        //if (hasTarget.Value)
-        //    return TaskStatus.Running;
-        //else
-        //    return TaskStatus.Success;
+        return TaskStatus.Success;
     }
 
     //Set the waypoint destination
