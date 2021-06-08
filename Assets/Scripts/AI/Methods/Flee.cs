@@ -37,7 +37,7 @@ public class Flee : MonoBehaviour {
 
     //Get a random point inside a sphere
     private Vector3 GetPointInPlane () {
-        Vector3 point = new Vector3(Random.Range(0f, 1f), 0, Random.Range(0f, 1f));
+        Vector3 point = new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
         point *= sizeWanted;
         point += transform.position;
         return point;
