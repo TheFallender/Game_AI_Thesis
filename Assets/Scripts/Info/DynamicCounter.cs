@@ -48,7 +48,14 @@ public class DynamicCounter : MonoBehaviour {
     public void TickRecord (string key) {
         if (records.TryGetValue(key, out CounterInfo temp)) {
             temp.counter++;
-            records[key] = temp;
+            OnRecordsChanged();
+        }
+    }
+
+    //Set record value
+    public void SetRecordVal (string key, float val) {
+        if (records.TryGetValue(key, out CounterInfo temp)) {
+            temp.counter = val;
             OnRecordsChanged();
         }
     }
@@ -57,7 +64,6 @@ public class DynamicCounter : MonoBehaviour {
     public void ResetRecord (string key) {
         if (records.TryGetValue(key, out CounterInfo temp)) {
             temp.counter = 0;
-            records[key] = temp;
             OnRecordsChanged();
         }
     }
@@ -82,7 +88,7 @@ public class DynamicCounter : MonoBehaviour {
 }
 
 //Struct that holds the records info
-public struct CounterInfo {
+public class CounterInfo {
     public string infoString;
-    public uint counter;
+    public float counter;
 }

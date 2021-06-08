@@ -16,6 +16,9 @@ public class Patrol : MonoBehaviour{
 
     //Determine which one should be the first waypoint
     public void Initialize () {
+        if (!routeToFollow)
+            routeToFollow = FindObjectOfType<Route>();
+
         //Initialize the route
         routeToFollow.Initialize();
 
