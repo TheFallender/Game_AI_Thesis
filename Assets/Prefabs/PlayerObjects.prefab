@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 478304890624873916}
   - component: {fileID: 478304890624873918}
   - component: {fileID: 478304890624873905}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: PlayerSim
   m_TagString: Player
   m_Icon: {fileID: 0}
