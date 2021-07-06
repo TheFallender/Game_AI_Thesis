@@ -43,7 +43,7 @@ public class PatrolAction : MainAction {
         }
 
         //Return value based on the target status from the states
-        if (States.HasState(hasTarget.ToString()))
+        if (!States.HasState(hasTarget.ToString()))
             return EActionStatus.Running;
         else
             return EActionStatus.Success;

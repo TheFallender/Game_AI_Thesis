@@ -1176,7 +1176,7 @@ PrefabInstance:
     - target: {fileID: 4355596829319306659, guid: 906c762d00c533c4b8f9b9ba1f201596,
         type: 3}
       propertyPath: m_Name
-      value: GuardAgent
+      value: GuardAgent - BT
       objectReference: {fileID: 0}
     - target: {fileID: 4355596830202746498, guid: 906c762d00c533c4b8f9b9ba1f201596,
         type: 3}
